@@ -1,0 +1,25 @@
+.logo-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+
+  &--footer {
+    align-items: flex-start;
+    flex-direction: column;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.logo-wrap__text {
+  display: none;
+  visibility: hidden;
+
+  @include desktop {
+    display: block;
+    visibility: visible;
+  }
+}

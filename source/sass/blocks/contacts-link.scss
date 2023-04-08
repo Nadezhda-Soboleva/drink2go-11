@@ -1,0 +1,15 @@
+.contacts-link {
+  display: flex;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: max-content;
+}
+
+.contacts-link__icon {
+  color: $base-primary;
+  display: block;
+  min-width: 13px;
+  min-height: 16px;
+}

@@ -1,0 +1,44 @@
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  &--large {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 2%;
+  }
+
+  &--small {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &--xsmall {
+    font-size: 14px;
+    line-height: 20px;
+    color: $base-primary;
+  }
+
+  @include tablet {
+    font-size: 42px;
+    line-height: 64px;
+
+    &--large {
+      font-size: 56px;
+      line-height: 80px;
+    }
+
+    &--small {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &--xsmall {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

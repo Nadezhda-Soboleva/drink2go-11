@@ -1,0 +1,42 @@
+.button {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 20px;
+  gap: 6px;
+  color: $base-white;
+  border-radius: 4px;
+  border: none;
+  background-color: $base-primary;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+    cursor: context-menu;
+    pointer-events: none;
+    color: $base-white;
+  }
+
+  &--extra {
+    background-color: $base-white;
+    color: $base-primary;
+  }
+
+  &--extra:disabled {
+    background-color: $light-grey;
+  }
+}

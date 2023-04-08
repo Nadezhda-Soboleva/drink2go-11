@@ -1,0 +1,17 @@
+.academy-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}

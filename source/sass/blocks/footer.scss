@@ -1,0 +1,144 @@
+.footer {
+  background-color: $base-white;
+}
+
+.footer__container {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+  }
+}
+
+.footer__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 1px;
+    width: 100vw;
+    background-color: $base-secondary;
+  }
+
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    padding-bottom: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+  }
+}
+
+.footer__lists {
+  margin: 0;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  @include desktop {
+    padding-top: 50px;
+    grid-column: span 3;
+  }
+}
+
+.footer__list {
+  position: relative;
+  padding: 20px 0;
+  margin-bottom: 1px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 100vw;
+    transform: translateX(-50%);
+    border-bottom: 1px solid $base-secondary;
+  }
+
+  @include tablet {
+    padding: 0;
+    margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.footer__list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2%;
+  color: $base-primary;
+  margin-bottom: 12px;
+
+  .footer__list--contacts & {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__list-item {
+  margin-left: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .footer__list--contacts &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__list-link {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 2%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 0;
+}
+
+.footer__copyright {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+
+  @include tablet {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    grid-column: span 4;
+  }
+}
