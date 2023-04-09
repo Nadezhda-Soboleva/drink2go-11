@@ -1,0 +1,34 @@
+.feature {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  justify-items: center;
+
+  @include tablet {
+    gap: 20px;
+    grid-template-columns: 52px auto;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @include tablet {
+    text-align: start;
+    grid-template: 10px;
+  }
+
+  @include desktop {
+    text-align: center;
+  }
+}
+
+.feature__description {
+  margin: 0;
+}
