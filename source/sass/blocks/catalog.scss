@@ -1,0 +1,35 @@
+.catalog {
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: 350px auto;
+  }
+}
+
+.catalog__header {
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include desktop {
+    margin-bottom: 40px;
+    grid-column: span 2;
+  }
+}
+
+.catalog__filter {
+  margin-bottom: 40px;
+
+  @include desktop {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}

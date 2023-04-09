@@ -1,0 +1,61 @@
+.filter__form {
+  display: grid;
+  gap: 30px;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.filter__item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter__title {
+  padding: 0;
+  display: contents;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filter__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: center;
+    grid-column: span 3;
+  }
+
+  @include desktop {
+    margin-top: 10px;
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.filter__button {
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @include desktop {
+    width: 100%;
+  }
+}

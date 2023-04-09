@@ -1,6 +1,7 @@
 import { togglerTemplate } from './templates.js';
 import { createElement } from './util.js';
-import './slider.js';
+import './carousel.js';
+import './filter.js';
 
 const userNavigation = document.querySelector('.js-user-navs');
 const pagesNavigation = document.querySelector('.navigation__list--pages');

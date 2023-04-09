@@ -6,6 +6,7 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.css" integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -57,28 +58,39 @@
     </nav>
   </header>
 
-  <main class="main-page">
-    <div class="slider">
+  <main class="page__content">
+    <div class="carousel">
       <div class="swiper container">
-        <div class="swiper-wrapper slider__wrapper">
-          <div class="swiper-slide slider__item">
-            <div class="slider__background" style="background-color: #F3EBE1;"></div>
-            <div class="slider__image-wrapper">
+        <div class="swiper-wrapper carousel__wrapper">
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__background" style="background-color: #F3EBE1;"></div>
+            <div class="carousel__image-wrapper">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/slides/slide-1-desktop.webp 1x, img/slides/slide-1-desktop@2x.webp 2x" type="image/webp" width="600" height="600">
-                <source media="(min-width: 1440px)" srcset="img/slides/slide-1-desktop.png 1x, img/slides/slide-1-desktop@2x.png 2x" type="image/png" width="600" height="600">
-                <source media="(min-width: 768px)" srcset="img/slides/slide-1-tablet.webp 1x, img/slides/slide-1-tablet@2x.webp 2x" type="image/webp" width="476" height="476">
-                <source media="(min-width: 768px)" srcset="img/slides/slide-1-tablet.png 1x, img/slides/slide-1-tablet@2x.png 2x" type="image/png" width="476" height="476">
-                <source srcset="img/slides/slide-1-mobile.webp 1x, img/slides/slide-1-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
-                <source srcset="img/slides/slide-1-mobile.png 1x, img/slides/slide-1-mobile@2x.png 2x" type="image/png" width="280" height="280">
-                <img class="slider__image" alt="Decaf Flat White">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slides/slide-1-desktop.webp 1x, img/slides/slide-1-desktop@2x.webp 2x" type="image/webp"
+                  width="600" height="600">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slides/slide-1-desktop.png 1x, img/slides/slide-1-desktop@2x.png 2x" type="image/png"
+                  width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="img/slides/slide-1-tablet.webp 1x, img/slides/slide-1-tablet@2x.webp 2x" type="image/webp"
+                  width="476" height="476">
+                <source media="(min-width: 768px)"
+                  srcset="img/slides/slide-1-tablet.png 1x, img/slides/slide-1-tablet@2x.png 2x" type="image/png"
+                  width="476" height="476">
+                <source srcset="img/slides/slide-1-mobile.webp 1x, img/slides/slide-1-mobile@2x.webp 2x"
+                  type="image/webp" width="280" height="280">
+                <source srcset="img/slides/slide-1-mobile.png 1x, img/slides/slide-1-mobile@2x.png 2x" type="image/png"
+                  width="280" height="280">
+                <img class="carousel__image" alt="Decaf Flat White">
               </picture>
             </div>
-            <div class="slider__inner">
-              <b class="slider__badge badge">Новинка!</b>
-              <h2 class="slider__title title title--large">Декаф Флэт Уайт</h2>
-              <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-              <div class="slider__order">
+            <div class="carousel__inner">
+              <b class="carousel__badge badge">Новинка!</b>
+              <h2 class="carousel__title title title--large">Декаф Флэт Уайт</h2>
+              <p class="carousel__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
+                молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <div class="carousel__order">
                 <span>
                   <span class="price price--old">295₽</span>
                   <span class="price">225₽</span>
@@ -88,24 +100,35 @@
             </div>
           </div>
 
-          <div class="swiper-slide slider__item">
-            <div class="slider__background" style="background-color: #EAE6FC;"></div>
-            <div class="slider__image-wrapper">
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__background" style="background-color: #EAE6FC;"></div>
+            <div class="carousel__image-wrapper">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" type="image/webp" width="600" height="600">
-                <source media="(min-width: 1440px)" srcset="img/slides/slide-2-desktop.png 1x, img/slides/slide-2-desktop@2x.png 2x" type="image/png" width="600" height="600">
-                <source media="(min-width: 768px)" srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" type="image/webp" width="476" height="476">
-                <source media="(min-width: 768px)" srcset="img/slides/slide-2-tablet.png 1x, img/slides/slide-2-tablet@2x.png 2x" type="image/png" width="476" height="476">
-                <source srcset="img/slides/slide-2-mobile.webp 1x, img/slides/slide-2-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
-                <source srcset="img/slides/slide-2-mobile.png 1x, img/slides/slide-2-mobile@2x.png 2x" type="image/png" width="280" height="280">
-                <img class="slider__image" alt="Lavender Latte">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" type="image/webp"
+                  width="600" height="600">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slides/slide-2-desktop.png 1x, img/slides/slide-2-desktop@2x.png 2x" type="image/png"
+                  width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" type="image/webp"
+                  width="476" height="476">
+                <source media="(min-width: 768px)"
+                  srcset="img/slides/slide-2-tablet.png 1x, img/slides/slide-2-tablet@2x.png 2x" type="image/png"
+                  width="476" height="476">
+                <source srcset="img/slides/slide-2-mobile.webp 1x, img/slides/slide-2-mobile@2x.webp 2x"
+                  type="image/webp" width="280" height="280">
+                <source srcset="img/slides/slide-2-mobile.png 1x, img/slides/slide-2-mobile@2x.png 2x" type="image/png"
+                  width="280" height="280">
+                <img class="carousel__image" alt="Lavender Latte">
               </picture>
             </div>
-            <div class="slider__inner">
-              <b class="slider__badge badge">Новинка!</b>
-              <h2 class="slider__title title title--large">Лавандовый Латте</h2>
-              <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-              <div class="slider__order">
+            <div class="carousel__inner">
+              <b class="carousel__badge badge">Новинка!</b>
+              <h2 class="carousel__title title title--large">Лавандовый Латте</h2>
+              <p class="carousel__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+                лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="carousel__order">
                 <span>
                   <span class="price price--old">285₽</span>
                   <span class="price">265₽</span>
@@ -115,24 +138,35 @@
             </div>
           </div>
 
-          <div class="swiper-slide slider__item">
-            <div class="slider__background" style="background-color: #E5E6E8;"></div>
-            <div class="slider__image-wrapper">
+          <div class="swiper-slide carousel__item">
+            <div class="carousel__background" style="background-color: #E5E6E8;"></div>
+            <div class="carousel__image-wrapper">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/slides/slide-3-desktop.webp 1x, img/slides/slide-3-desktop@2x.webp 2x" type="image/webp" width="600" height="600">
-                <source media="(min-width: 1440px)" srcset="img/slides/slide-3-desktop.png 1x, img/slides/slide-3-desktop@2x.png 2x" type="image/png" width="600" height="600">
-                <source media="(min-width: 768px)" srcset="img/slides/slide-3-tablet.webp 1x, img/slides/slide-3-tablet@2x.webp 2x" type="image/webp" width="476" height="476">
-                <source media="(min-width: 768px)" srcset="img/slides/slide-3-tablet.png 1x, img/slides/slide-3-tablet@2x.png 2x" type="image/png" width="476" height="476">
-                <source srcset="img/slides/slide-3-mobile.webp 1x, img/slides/slide-3-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
-                <source srcset="img/slides/slide-3-mobile.png 1x, img/slides/slide-3-mobile@2x.png 2x" type="image/png" width="280" height="280">
-                <img class="slider__image" alt="Tripple Espresso">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slides/slide-3-desktop.webp 1x, img/slides/slide-3-desktop@2x.webp 2x" type="image/webp"
+                  width="600" height="600">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slides/slide-3-desktop.png 1x, img/slides/slide-3-desktop@2x.png 2x" type="image/png"
+                  width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="img/slides/slide-3-tablet.webp 1x, img/slides/slide-3-tablet@2x.webp 2x" type="image/webp"
+                  width="476" height="476">
+                <source media="(min-width: 768px)"
+                  srcset="img/slides/slide-3-tablet.png 1x, img/slides/slide-3-tablet@2x.png 2x" type="image/png"
+                  width="476" height="476">
+                <source srcset="img/slides/slide-3-mobile.webp 1x, img/slides/slide-3-mobile@2x.webp 2x"
+                  type="image/webp" width="280" height="280">
+                <source srcset="img/slides/slide-3-mobile.png 1x, img/slides/slide-3-mobile@2x.png 2x" type="image/png"
+                  width="280" height="280">
+                <img class="carousel__image" alt="Tripple Espresso">
               </picture>
             </div>
-            <div class="slider__inner">
-              <b class="slider__badge badge">Новинка!</b>
-              <h2 class="slider__title title title--large">Тройной Эспрессо</h2>
-              <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-              <div class="slider__order">
+            <div class="carousel__inner">
+              <b class="carousel__badge badge">Новинка!</b>
+              <h2 class="carousel__title title title--large">Тройной Эспрессо</h2>
+              <p class="carousel__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо
+                из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="carousel__order">
                 <span>
                   <span class="price price--old">395₽</span>
                   <span class="price">375₽</span>
@@ -143,18 +177,18 @@
           </div>
         </div>
 
-        <button class="swiper-button-prev slider__button slider__button--previous" type="button">
+        <button class="swiper-button-prev carousel__button carousel__button--previous" type="button">
           <svg width="11" height="20">
             <use xlink:href="img/icons/stack.svg#arrow" />
           </svg>
         </button>
-        <button class="swiper-button-next slider__button slider__button--next" type="button">
+        <button class="swiper-button-next carousel__button carousel__button--next" type="button">
           <svg width="11" height="20">
             <use xlink:href="img/icons/stack.svg#arrow" />
           </svg>
         </button>
 
-        <div class="swiper-pagination slider__bullets"></div>
+        <div class="swiper-pagination carousel__bullets"></div>
       </div>
     </div>
 
@@ -202,6 +236,93 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="catalog container">
+      <header class="catalog__header">
+        <h2 class="badge">Каталог</h2>
+        <h2 class="title">Каталог кофейных напитков</h2>
+      </header>
+
+      <aside class="catalog__filter filter">
+        <h2 class="visually-hidden">Фильтер</h2>
+
+        <form class="filter__form">
+          <fieldset class="filter__item">
+            <legend class="filter__title">Цена</legend>
+            <div class="slider">
+              <div class="slider__range" id="slider"></div>
+              <div class="slider__inputs">
+                <input class="slider__input" name="price_from" type="number" step="1" min="0" max="140" value="0" aria-label="Цена от" readonly>
+                <span class="slider__seperator"></span>
+                <input class="slider__input" name="price_to" type="number" step="1" min="10" max="150" value="123" aria-label="Цена до" readonly>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter__item">
+            <legend class="filter__title">Наличие молока</legend>
+            <label class="radiobutton">
+              <input class="visually-hidden" type="radio" name="milk" value="skip" checked>
+              <span class="radiobutton__icon"></span>
+              <span class="radiobutton__label">Неважно</span>
+            </label>
+            <label class="radiobutton">
+              <input class="visually-hidden" type="radio" name="milk" value="animals">
+              <span class="radiobutton__icon"></span>
+              <span class="radiobutton__label">Только животное</span>
+            </label>
+            <label class="radiobutton">
+              <input class="visually-hidden" type="radio" name="milk" value="vegetables">
+              <span class="radiobutton__icon"></span>
+              <span class="radiobutton__label">Только растительное</span>
+            </label>
+            <label class="radiobutton">
+              <input class="visually-hidden" type="radio" name="milk" value="none" disabled>
+              <span class="radiobutton__icon"></span>
+              <span class="radiobutton__label">Без молока</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filter__item">
+            <legend class="filter__title">Страна произрастания</legend>
+            <label class="checkbox">
+              <input class="visually-hidden" type="checkbox" name="Brazil" checked>
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__label">Бразилия</span>
+            </label>
+            <label class="checkbox">
+              <input class="visually-hidden" type="checkbox" name="Ethiopia">
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__label">Эфиопия</span>
+            </label>
+            <label class="checkbox">
+              <input class="visually-hidden" type="checkbox" name="Colombia">
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__label">Колумбия</span>
+            </label>
+            <label class="checkbox">
+              <input class="visually-hidden" type="checkbox" name="Costa-Rica">
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__label">Коста-Рика</span>
+            </label>
+            <label class="checkbox">
+              <input class="visually-hidden" type="checkbox" name="Peru" disabled>
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__label">Перу</span>
+            </label>
+          </fieldset>
+
+          <div class="filter__buttons">
+            <button class="filter__button button" type="submit">Применить</button>
+            <button class="filter__button button button--extra" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </aside>
+
+      <section class="catalog__products products">
+        products
+      </section>
     </section>
   </main>
 
@@ -305,6 +426,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js" integrity="sha512-UOJe4paV6hYWBnS0c9GnIRH8PLm2nFK22uhfAvsTIqd3uwnWsVri1OPn5fJYdLtGY3wB11LGHJ4yPU1WFJeBYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/script.js" type="module" defer></script>
 </body>
 

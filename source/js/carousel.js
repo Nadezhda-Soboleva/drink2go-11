@@ -5,7 +5,7 @@ new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
   navigation: {
-    nextEl: '.slider__button--next',
-    prevEl: '.slider__button--previous',
+    nextEl: '.carousel__button--next',
+    prevEl: '.carousel__button--previous',
   },
 });
