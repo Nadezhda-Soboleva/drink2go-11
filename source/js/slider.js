@@ -1,10 +1,11 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-
 new Swiper('.swiper', {
-  loop: true,
+  loop: false,
   direction: 'horizontal',
+  pagination: {
+    el: '.swiper-pagination',
+  },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider__button--next',
+    prevEl: '.slider__button--previous',
   },
 });

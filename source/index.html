@@ -58,38 +58,104 @@
   </header>
 
   <main>
-    <div class="swiper container slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slider__item">
-          <div class="slider__background" style="background-color: #F3EBE1;"></div>
-          <div class="slider__image-wrapper">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/flat-white-desktop.png 1x, img/flat-white-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/flat-white-tablet.png 1x, img/flat-white-tablet@2x.png 2x">
-              <source srcset="https://www.gstatic.com/webp/gallery/4.sm.webp" type="image/webp">
-              <img class="slider__image" src="img/flat-white-mobile.webp" srcset="img/flat-white-mobile@2x.webp 2x" alt="Пример нашей работы" width="280" height="280">
-            </picture>
+    <div class="slider">
+      <div class="swiper container">
+        <div class="swiper-wrapper slider__wrapper">
+          <div class="swiper-slide slider__item">
+            <div class="slider__background" style="background-color: #F3EBE1;"></div>
+            <div class="slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/slides/slide-1-desktop.webp 1x, img/slides/slide-1-desktop@2x.webp 2x" type="image/webp" width="600" height="600">
+                <source media="(min-width: 1440px)" srcset="img/slides/slide-1-desktop.png 1x, img/slides/slide-1-desktop@2x.png 2x" type="image/png" width="600" height="600">
+                <source media="(min-width: 768px)" srcset="img/slides/slide-1-tablet.webp 1x, img/slides/slide-1-tablet@2x.webp 2x" type="image/webp" width="476" height="476">
+                <source media="(min-width: 768px)" srcset="img/slides/slide-1-tablet.png 1x, img/slides/slide-1-tablet@2x.png 2x" type="image/png" width="476" height="476">
+                <source srcset="img/slides/slide-1-mobile.webp 1x, img/slides/slide-1-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
+                <source srcset="img/slides/slide-1-mobile.png 1x, img/slides/slide-1-mobile@2x.png 2x" type="image/png" width="280" height="280">
+                <img class="slider__image" alt="Decaf Flat White">
+              </picture>
+            </div>
+            <div class="slider__inner">
+              <b class="slider__badge badge">Новинка!</b>
+              <h2 class="slider__title title title--large">Декаф Флэт Уайт</h2>
+              <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <div class="slider__order">
+                <span>
+                  <span class="price price--old">295₽</span>
+                  <span class="price">225₽</span>
+                </span>
+                <button class="button">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__background" style="background-color: #EAE6FC;"></div>
+            <div class="slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" type="image/webp" width="600" height="600">
+                <source media="(min-width: 1440px)" srcset="img/slides/slide-2-desktop.png 1x, img/slides/slide-2-desktop@2x.png 2x" type="image/png" width="600" height="600">
+                <source media="(min-width: 768px)" srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" type="image/webp" width="476" height="476">
+                <source media="(min-width: 768px)" srcset="img/slides/slide-2-tablet.png 1x, img/slides/slide-2-tablet@2x.png 2x" type="image/png" width="476" height="476">
+                <source srcset="img/slides/slide-2-mobile.webp 1x, img/slides/slide-2-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
+                <source srcset="img/slides/slide-2-mobile.png 1x, img/slides/slide-2-mobile@2x.png 2x" type="image/png" width="280" height="280">
+                <img class="slider__image" alt="Lavender Latte">
+              </picture>
+            </div>
+            <div class="slider__inner">
+              <b class="slider__badge badge">Новинка!</b>
+              <h2 class="slider__title title title--large">Лавандовый Латте</h2>
+              <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="slider__order">
+                <span>
+                  <span class="price price--old">285₽</span>
+                  <span class="price">265₽</span>
+                </span>
+                <button class="button">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__background" style="background-color: #E5E6E8;"></div>
+            <div class="slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/slides/slide-3-desktop.webp 1x, img/slides/slide-3-desktop@2x.webp 2x" type="image/webp" width="600" height="600">
+                <source media="(min-width: 1440px)" srcset="img/slides/slide-3-desktop.png 1x, img/slides/slide-3-desktop@2x.png 2x" type="image/png" width="600" height="600">
+                <source media="(min-width: 768px)" srcset="img/slides/slide-3-tablet.webp 1x, img/slides/slide-3-tablet@2x.webp 2x" type="image/webp" width="476" height="476">
+                <source media="(min-width: 768px)" srcset="img/slides/slide-3-tablet.png 1x, img/slides/slide-3-tablet@2x.png 2x" type="image/png" width="476" height="476">
+                <source srcset="img/slides/slide-3-mobile.webp 1x, img/slides/slide-3-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
+                <source srcset="img/slides/slide-3-mobile.png 1x, img/slides/slide-3-mobile@2x.png 2x" type="image/png" width="280" height="280">
+                <img class="slider__image" alt="Tripple Espresso">
+              </picture>
+            </div>
+            <div class="slider__inner">
+              <b class="slider__badge badge">Новинка!</b>
+              <h2 class="slider__title title title--large">Тройной Эспрессо</h2>
+              <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="slider__order">
+                <span>
+                  <span class="price price--old">395₽</span>
+                  <span class="price">375₽</span>
+                </span>
+                <button class="button">Заказать</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="swiper-slide slider">
-          <div class="slider__background" style="background-color: #7859CF;"></div>
-        </div>
-        <div class="swiper-slide slider">
-          <div class="slider__background" style="background-color: #E5E6E8;"></div>
-        </div>
-      </div>
+        <button class="swiper-button-prev slider__button slider__button--previous" type="button">
+          <svg width="11" height="20">
+            <use xlink:href="img/icons/stack.svg#arrow" />
+          </svg>
+        </button>
+        <button class="swiper-button-next slider__button slider__button--next" type="button">
+          <svg width="11" height="20">
+            <use xlink:href="img/icons/stack.svg#arrow" />
+          </svg>
+        </button>
 
-      <button class="swiper-button-prev slider__button slider__button--previous" type="button">
-        <svg width="11" height="20">
-          <use xlink:href="img/icons/stack.svg#arrow-left" />
-        </svg>
-      </button>
-      <button class="swiper-button-next slider__button slider__button--next" type="button">
-        <svg width="11" height="20">
-          <use xlink:href="img/icons/stack.svg#arrow-right" />
-        </svg>
-      </button>
+        <div class="swiper-pagination slider__bullets"></div>
+      </div>
     </div>
   </main>
 
