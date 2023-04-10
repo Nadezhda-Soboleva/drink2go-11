@@ -20,12 +20,14 @@
   gap: 10px;
   transition: .3s;
   opacity: 0;
+  visibility: hidden;
   padding-top: 20px;
   padding-bottom: 60px;
   justify-content: center;
 
   &.swiper-slide-active {
     opacity: 1;
+    visibility: visible;
   }
 
   @include tablet {
