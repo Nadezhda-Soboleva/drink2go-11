@@ -67,3 +67,20 @@ img {
   text-transform: uppercase;
   color: $base-primary;
 }
+
+.map {
+  height: 420px;
+  width: 100%;
+
+  &:empty {
+    height: 0;
+  }
+
+  @include tablet {
+    height: 480px;
+  }
+
+  @include desktop {
+    height: 540px;
+  }
+}

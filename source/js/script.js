@@ -3,6 +3,7 @@ import { createElement } from './util.js';
 import './carousel.js';
 import './filter.js';
 import './dropdown.js';
+import { initMap } from './map.js';
 
 if (window.screen.width < 768) {
   const userNavigation = document.querySelector('.js-user-navs');
@@ -24,3 +25,5 @@ if (window.screen.width < 768) {
     }
   });
 }
+
+initMap(18);
