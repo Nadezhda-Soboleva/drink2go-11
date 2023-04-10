@@ -20,7 +20,7 @@
   color: $base-primary;
   background-color: $base-white;
   border-radius: 4px;
-  transition: .3s;
+  transition: 0.3s;
 
   &--current {
     background-color: transparent;
@@ -41,18 +41,19 @@
   }
 
   @include tablet {
-
     &::after {
       content: attr(aria-label);
     }
 
     &--previous,
     &--next {
-      svg {
-        display: none;
-      }
 
       padding: 0 20px;
+    }
+
+    &--previous svg,
+    &--next svg {
+      display: none;
     }
   }
 }

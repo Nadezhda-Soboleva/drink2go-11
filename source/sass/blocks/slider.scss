@@ -36,7 +36,7 @@
     box-shadow: none;
     border-radius: 50%;
     background-color: $base-white;
-    transition: .3s;
+    transition: 0.3s;
 
     &:active {
       border-color: $base-primary;
@@ -54,7 +54,7 @@
       width: calc(100% - 4px);
       height: calc(100% - 4px);
       background-color: transparent;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     &:focus-visible {

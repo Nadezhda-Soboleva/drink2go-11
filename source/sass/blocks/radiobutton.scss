@@ -12,18 +12,18 @@
   background-color: $base-white;
   border-radius: 50%;
   border: 2px solid $base-grey;
-  transition: .3s;
+  transition: 0.3s;
 
-  input:hover+&,
-  input:focus+& {
+  input:hover + &,
+  input:focus + & {
     border-color: $primary-lighter;
   }
 
-  input:checked+& {
+  input:checked + & {
     border-color: $base-primary;
   }
 
-  input:disabled+& {
+  input:disabled + & {
     border-color: $light-grey;
   }
 
@@ -34,30 +34,30 @@
     left: 2px;
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-    transition: .3s;
+    transition: 0.3s;
     border-radius: 50%;
   }
 
-  input:hover+&::after,
-  input:focus+&::after {
+  input:hover + &::after,
+  input:focus + &::after {
     background-color: $primary-opacity;
   }
 
-  input:checked+&::after {
+  input:checked + &::after {
     background-color: $base-primary;
   }
 
-  input:disabled+&::after {
+  input:disabled + &::after {
     background-color: transparent;
   }
 
-  input:checked:disabled+&::after {
+  input:checked:disabled + &::after {
     background-color: $light-grey;
   }
 }
 
 .radiobutton__label {
-  input:disabled~& {
+  input:disabled ~ & {
     color: $base-grey;
   }
 }

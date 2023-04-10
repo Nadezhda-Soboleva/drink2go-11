@@ -24,7 +24,7 @@
     width: 100vw;
     height: 100%;
     border-bottom: 1px solid $base-secondary;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &:active::before {
@@ -34,7 +34,7 @@
   @include tablet {
     min-height: 80px;
     padding: 32px 20px;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover,
     &:focus {
@@ -52,18 +52,17 @@
 
     &--current {
       color: $base-primary;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 100%;
-        transform: translateY(-100%);
-        width: 100%;
-        height: 2px;
-        background-color: $base-primary;
-      }
     }
 
+    &--current::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      transform: translateY(-100%);
+      width: 100%;
+      height: 2px;
+      background-color: $base-primary;
+    }
   }
 }

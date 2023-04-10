@@ -12,20 +12,20 @@
   border-radius: 24px;
   border: 2px solid $base-grey;
   background-color: $base-grey;
-  transition: .3s;
+  transition: 0.3s;
 
-  input:hover+&,
-  input:focus+& {
+  input:hover + &,
+  input:focus + & {
     border-color: $primary-lighter;
     background-color: $primary-opacity;
   }
 
-  input:checked+& {
+  input:checked + & {
     border-color: $base-primary;
     background-color: $base-primary;
   }
 
-  input:disabled+& {
+  input:disabled + & {
     border-color: $light-grey;
     background-color: $light-grey;
   }
@@ -37,22 +37,22 @@
     left: 0;
     width: 20px;
     height: 20px;
-    transition: .3s;
+    transition: 0.3s;
     border-radius: 50%;
     background-color: $base-white;
   }
 
-  input:checked+&::after {
+  input:checked + &::after {
     left: 18px;
   }
 
-  input:checked:disabled+&::after {
+  input:checked:disabled + &::after {
     background-color: $base-grey;
   }
 }
 
 .checkbox__label {
-  input:disabled~& {
+  input:disabled ~ & {
     color: $base-grey;
   }
 }

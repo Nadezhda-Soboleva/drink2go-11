@@ -18,19 +18,19 @@
     width: 100%;
     flex-direction: column;
     padding-top: 1px;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 0;
-      z-index: -1;
-      transform: translateX(-50%);
-      width: 100vw;
-      height: 1px;
-      background-color: $base-secondary;
-      transition: .3s;
-    }
+  &--pages::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: $base-secondary;
+    transition: 0.3s;
   }
 
   &--hidden {
@@ -45,10 +45,10 @@
       padding-top: 0;
       width: auto;
       flex-direction: row;
+    }
 
-      &::before {
-        display: none;
-      }
+    &--pages::before {
+      display: none;
     }
   }
 }

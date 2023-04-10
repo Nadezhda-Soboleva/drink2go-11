@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0;
   visibility: hidden;
   padding-top: 20px;
@@ -46,7 +46,6 @@
 }
 
 .carousel__background {
-  background-color: #F3EBE1;
   position: absolute;
   left: 50%;
   top: 0;
@@ -142,12 +141,12 @@
   height: 100%;
   width: 20px;
   color: $base-primary;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover,
   &:focus {
     outline: none;
-    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, $base-white 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {
@@ -204,11 +203,11 @@
       border-radius: 0;
       background-color: $base-white;
       opacity: 1;
-      transition: .3s;
+      transition: 0.3s;
+    }
 
-      &-active {
-        background-color: $base-primary;
-      }
+    .swiper-pagination-bullet-active {
+      background-color: $base-primary;
     }
   }
 }
